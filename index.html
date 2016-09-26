@@ -75,8 +75,27 @@
 
         <div>
             <nav class="nav-table-toolbar">
-                <a href="#" class="create-document">Create document</a>
-                <a href="#" class="attach-document">Attach document</a>
+                <ul class="dropdown">
+                    <li class="dropdown-top">
+                        <a href="#" class="create-document">Create document</a>
+                        <ul class="dropdown-inside">
+                            <li class="violet"><a href="/">Incoming documents</a></li>
+                            <li class="dark-cyan"><a href="/">Outgoing documents</a></li>
+                            <li class="bright-yellow"><a href="/">Fax documents</a></li>
+                            <li class="strong-red"><a href="/">Warrant</a></li>
+                            <li class="moderate-cyan"><a href="/">Job description</a></li>
+                            <li class="soft-red selected-top"><a href="/">Contract</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-top">
+                        <a href="#" class="attach-document">Attach document</a>
+                        <ul class="dropdown-inside">
+                            <li class="soft-red"><a href="/">Content</a></li>
+                            <li class="gray selected-top"><a href="/">Annex</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
                 <span class="search-document">
                 <input type="text" class="search-document-input" placeholder="Search">

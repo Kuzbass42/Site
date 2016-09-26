@@ -1,0 +1,88 @@
+ul.dropdown,
+li.dropdown {
+    margin: 0;
+}
+
+ul.dropdown li {
+    position: relative;
+}
+
+ul.dropdown,
+ul.dropdown-inside {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.dropdown li.dropdown-top {
+    display: inline;
+    float: left;
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+    display: block;
+    left: 5px;
+}
+
+.dropdown-inside {
+    position: absolute;
+    left: -9999px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #999;
+    background-color: #fff;
+}
+
+.dropdown-inside a {
+    color: #666;
+    width: 100%;
+    text-indent: 23px;
+    display: inline-block;
+}
+
+.dropdown-inside > li {
+    width: 190px;
+    height: 32px;
+    text-align: left;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+ul.dropdown-inside > li:first-child {margin-top: 6px;}
+ul.dropdown-inside > li:last-child {margin-bottom: 6px;}
+
+.dropdown-inside > li > a:hover {color: #fff;}
+
+.dropdown-inside > li > a:hover:after{
+    float: right;
+    margin-right: 17px;
+    content: '\f0da';
+    font-family: 'Font Awesome', sans-serif;
+}
+
+ul.dropdown-inside > li.violet:hover {background-color: #937ebd;}
+ul.dropdown-inside > li.dark-cyan:hover {background-color: #1a9cb0;}
+ul.dropdown-inside > li.bright-yellow:hover {background-color: #ecc134;}
+ul.dropdown-inside > li.strong-red:hover {background-color: #b32746;}
+ul.dropdown-inside > li.moderate-cyan:hover {background-color: #39b7ac;}
+ul.dropdown-inside > li.soft-red:hover {background-color: #eb6a5a;}
+ul.dropdown-inside > li.gray:hover {background-color: #999;}
+
+/*
+//todo: статика или динамика
+.dropdown-inside > li.selected-top > a {color: #fff;}
+
+.dropdown-inside > li.selected-top > a:after{
+    float: right;
+    margin-right: 17px;
+    content: '\f0da';
+    font-family: 'Font Awesome', sans-serif;
+}
+
+ul.dropdown-inside > li.violet.selected-top {background-color: #937ebd;}
+ul.dropdown-inside > li.dark-cyan.selected-top {background-color: #1a9cb0;}
+ul.dropdown-inside > li.bright-yellow.selected-top {background-color: #ecc134;}
+ul.dropdown-inside > li.strong-red.selected-top {background-color: #b32746;}
+ul.dropdown-inside > li.moderate-cyan.selected-top {background-color: #39b7ac;}
+ul.dropdown-inside > li.soft-red.selected-top {background-color: #eb6a5a;}
+ul.dropdown-inside > li.gray.selected-top {background-color: #999;}
+*/
