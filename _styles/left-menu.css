@@ -1,0 +1,85 @@
+main > aside {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #39c2d7;
+}
+
+main > aside a{
+    display: flex;
+    align-items: center;
+}
+
+main > aside > nav ul {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+
+main > aside > nav > ul > li {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #5ecbdc;
+    list-style: none;
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 14px;
+}
+
+main > aside > nav > ul > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+main > aside > nav > ul > li ul > li > a{
+    color: #7a7a7a;
+}
+
+main > aside > nav > ul > li.selected {
+    background-color: #31a5b7;
+}
+
+main > aside > nav > ul > li li {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 29px;
+    border-bottom: 0;
+    list-style: none;
+    background-color: #e1f6f9;
+}
+
+main > aside > nav > ul li.expanded {
+    padding: 0;
+}
+
+main > aside > nav > ul  li.selected > a {
+    position: relative;
+}
+
+main > aside > nav > ul li.selected > a:after {
+    content: '\f0d7';
+    position: absolute;
+    right: 25px;
+    font-family: 'Font Awesome', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+main > aside > nav > ul li > a:before {
+    padding-left: 30px;
+    padding-right: 15px;
+    font-family: 'Font Awesome', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+main > aside > nav > ul li.home > a:before { content: '\f015'; }
+main > aside > nav > ul li.document > a:before { content: '\f15c'; }
+main > aside > nav > ul li.calendar > a:before { content: '\f073'; }
+main > aside > nav > ul li.archive > a:before { content: '\f187'; }
+main > aside > nav > ul li.nomenclature > a:before { content: '\f03a'; }
+main > aside > nav > ul li.organization > a:before { content: '\f0f2'; }
+
+main > aside li:hover
+{
+    background-color: #31a5b7;
+}

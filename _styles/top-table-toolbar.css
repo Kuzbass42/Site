@@ -1,0 +1,110 @@
+@import url(drop-down-menu.css);
+
+.nav-table-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-document,
+.attach-document,
+.search-document {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.create-document {
+    margin-left: 15px;
+    width: 190px;
+    height: 35px;
+    background-color: #a3c644;
+}
+
+.attach-document {
+    margin-left: 5px;
+    width: 190px;
+    height: 35px;
+    background-color: #ecc134;
+}
+
+.search-document {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 390px;
+    height: 33px;
+    padding: 0 0 0 5px;
+    border: 1px solid #999;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+    background-color: #fff;
+}
+
+.search-document-input {
+    margin-right: auto;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+    background-color: #fff;
+}
+
+.create-document:before{
+    margin-left: 19px;
+    margin-right: 12px;
+    content: '\f15b';
+    font-family: 'Font Awesome', sans-serif;
+}
+
+.attach-document:before{
+    margin-left: 15px;
+    margin-right: 15px;
+    content: '\f0c6';
+    font-family: 'Font Awesome', sans-serif;
+}
+
+.attach-document:after,
+.create-document:after{
+    position: absolute;
+    right: 15px;
+    content: '\f0d7';
+    font-family: 'Font Awesome', sans-serif;
+}
+
+.search-down,
+.search-plus {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: #ababab;;
+}
+
+.search-down:before,
+.search-down:after,
+.search-plus:after {
+    font-family: 'Font Awesome', sans-serif;
+    font-size: 18px;
+}
+
+.search-down:before {
+    content: '\f0d7';
+}
+
+.search-down:after{
+    content: '\f002';
+    margin-left: 3px;
+}
+
+.search-plus:after{
+    content: '\f00e';
+    margin: 0 6px;
+}
+

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="_styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class="header-user">
+            <a href="#" class="sharepoint">Sharepoint</a>
+
+            <nav class="header-nav-menu">
+                <a href="">My Sites</a>
+                <a href="">Yammer</a>
+                <a href="">OneDrive</a>
+                <a href="">Sites</a>
+            </nav>
+
+            <div class="header-user-account">
+                <a href="" class="user">Elizaveta Eliseeva</a>
+                <a href="" class="angle-down"><i class="icon-angle-down"></i></a>
+                <a href="" class="cog"><i class="icon-cog"></i></a>
+                <a href="" class="question"><i class="icon-question"></i></a>
+            </div>
+        </div>
+
+        <div class="header-tools">
+            <div class="nav-buttons">
+                <button>browse</button>
+                <button>files</button>
+                <button>library</button>
+            </div>
+            <div class="tools-buttons">
+                <button class="tools-buttons-share">share</button>
+                <button class="tools-buttons-follow">follow</button>
+                <button class="tools-buttons-edit">edit</button>
+                <button class="tools-buttons-fullscreen"></button>
+            </div>
+        </div>
+
+        <div class="header-search">
+                <a href="#" class="logo-img"><img src="_img/epam.png"></a>
+                <a href="#" class="odm">odm</a>
+                <a href="#" class="search-img"><img src="_img/search.png"></a>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li class="home"><a href="#">HOME</a></li>
+                    <li class="selected document"><a href="#">DOCUMENTS</a>
+                    <li class="expanded">
+                        <ul>
+                            <li><a href="#">INCOMING DOCUMENTS</a></li>
+                            <li><a href="#">OUTGOING DOCUMENTS</a></li>
+                            <li><a href="#">FAX DOCUMENTS</a></li>
+                            <li><a href="#">POWERS OF ATTORNEY</a></li>
+                            <li><a href="#">MANUALS</a></li>
+                            <li><a href="#">ORDERS</a></li>
+                            <li><a href="#">CONTRACTS</a></li>
+                            <li><a href="#">OTHER DOCUMENTS</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="calendar"><a href="#">CALENDAR</a></li>
+                    <li class="archive"><a href="#">ARCHIVE</a></li>
+                    <li class="nomenclature"><a href="#">NOMENCLATURE</a></li>
+                    <li class="organization"><a href="#">ORGANIZATIONS</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div>
+            <nav class="nav-table-toolbar">
+                <a href="#" class="create-document">Create document</a>
+                <a href="#" class="attach-document">Attach document</a>
+
+                <span class="search-document">
+                <input type="text" class="search-document-input" placeholder="Search">
+                <button class="search-down"></button>
+                <button class="search-plus"></button>
+                </span>
+            </nav>
+
+            <section class="content">
+                <header class="table-tab">
+                    <a href="#" class="create-by-me">CREATED BY ME</a>
+                    <a href="#tab2" class="under-my-approval selected">UNDER MY APPROVAL</a>
+                    <a href="#" class="sent-for-group">SENT FOR GROUP</a>
+                </header>
+
+                <section id="tab2">
+                    <section>
+                        <h1>INCOMING DOCUMENTS</h1>
+                        <table id="incoming-documents">
+                            <tr>
+                                <th class="selected">Incoming date</th>
+                                <th>Incoming number</th>
+                                <th>External Doc. Index</th>
+                                <th>External Doc. Date</th>
+                                <th>Type</th>
+                                <th>Theme</th>
+                                <th>Sent from</th>
+                                <th>Sent to</th>
+                                <th>Executor</th>
+                                <th>Execution Date</th>
+                                <th>Execution Mark</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>07/15/2015</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>EPAM</td>
+                                <td>Ivanov Ivan</td>
+                                <td>15/15/2015</td>
+                                <td><div class="signed">Signed</div></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>07/15/2015</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>EPAM</td>
+                                <td>Ivanov Ivan</td>
+                                <td>10/15/2015</td>
+                                <td><div class="awaits">Awaits</div></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>07/15/2015</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>EPAM</td>
+                                <td>Ivanov Ivan</td>
+                                <td>07/15/2015</td>
+                                <td><div class="cancelled">Cancelled</div></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section>
+                        <h1>OUTGOING DOCUMENTS</h1>
+                        <table id="outgoing-documents">
+                            <tr>
+                                <th class="selected">Outgoing date</th>
+                                <th>Reg. number</th>
+                                <th>Index</th>
+                                <th>Type</th>
+                                <th>Theme</th>
+                                <th>Sent to</th>
+                                <th>Executor</th>
+                                <th>Signature</th>
+                                <th>Notes</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>Ivanov Ivan</td>
+                                <td>Petrov Petr</td>
+                                <td></td>
+                                <td><div class="approved">Approved</div></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>Note</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>Ivanov Ivan</td>
+                                <td>Petrov Petr</td>
+                                <td></td>
+                                <td><div class="helded">Helded</div></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01/6</td>
+                                <td>01-01</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>Ivanov Ivan</td>
+                                <td>Petrov Petr</td>
+                                <td></td>
+                                <td><div class="changed">Changed</div></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section>
+                        <h1>FAX DOCUMENTS</h1>
+                        <table id="fax-documents">
+                            <tr>
+                                <th class="selected">Incoming date</th>
+                                <th>External Doc. Index</th>
+                                <th>External Doc. Date</th>
+                                <th>Type</th>
+                                <th>Theme</th>
+                                <th>Sent from</th>
+                                <th>Sent to</th>
+                                <th>Executor</th>
+                                <th>Execution Date</th>
+                                <th>Execution Mark</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01</td>
+                                <td>07/15/2015</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>EPAM</td>
+                                <td>Ivanov Ivan</td>
+                                <td>15/15/2015</td>
+                                <td><div class="deleted">Deleted</div></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>07/15/2015</td>
+                                <td>01-01</td>
+                                <td>07/15/2015</td>
+                                <td>Letter</td>
+                                <td>Whatever</td>
+                                <td>Organization 1</td>
+                                <td>EPAM</td>
+                                <td>Ivanov Ivan</td>
+                                <td>15/15/2015</td>
+                                <td><div class="deleted">Deleted</div></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" class="footer-powered">Powered by EPAM systems</a>
+
+        <div class="footer-about-info">
+            <a href="#" class="footer-about">About</a>
+            |
+            <a href="#" class="footer-help">Help</a>
+            |
+            <a href="#" class="footer-report-bug">Report a bug</a>
+        </div>
+    </footer>
+</body>
+</html>

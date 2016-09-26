@@ -1,0 +1,80 @@
+@import url(left-menu.css);
+@import url(top-table-toolbar.css);
+@import url(table.css);
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #d2d2d2;
+    margin: 15px 15px 0 15px;
+}
+
+.table-tab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 41px;
+    background-color: #666;
+}
+
+.sent-for-group,
+.create-by-me,
+.under-my-approval {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #feffff;
+    background-color: #666;
+}
+
+.create-by-me{
+    width: 151px;
+}
+
+.under-my-approval {
+    width: 188px;
+}
+
+.sent-for-group{
+    margin-right: auto;
+    width: 151px;
+}
+
+main > div > section > header > a:before {
+    padding-right: 12px;
+    font-family: FontAwesome, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.under-my-approval:before { content: '\f017';}
+.create-by-me:before { content: '\f040';}
+.sent-for-group:before { content: '\f0c0';}
+
+main > div > section > header > a.selected,
+main > div > section > header > a.selected:before {
+    background-color: #fff;
+    color: #666;
+}
+
+main > div > section > header > a.sent-for-group:hover,
+main > div > section > header > a.create-by-me:hover,
+main > div > section > header > a.under-my-approval:hover,
+main > div > section > header > a.sent-for-group:hover:before,
+main > div > section > header > a.create-by-me:hover:before,
+main > div > section > header > a.under-my-approval:hover:before {
+    background-color: #fff;
+    color: #666;
+}

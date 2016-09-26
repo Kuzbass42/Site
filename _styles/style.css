@@ -1,0 +1,35 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: 'Font Awesome';
+    src: url(../_fonts/fontawesome-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url(../_fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../_fonts/SourceSansPro-Regular.otf);
+}
+
+html {
+    height: 100%;
+    cursor: pointer;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    /*display: inline-block;*/
+    text-decoration: none;
+}

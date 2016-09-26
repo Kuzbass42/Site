@@ -1,0 +1,81 @@
+main > div > section h1{
+    margin-left: 18px;
+    height: 21px;
+    color: #666;
+    font-family: 'Oswald Regular', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+main > div > section table {
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+    border: 0;
+    color: #111;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+main > div > section table tr:nth-child(2n) {
+    background: #f1f1f1;
+}
+
+main > div > section table th{
+    text-align: center;
+    width: 61px;
+    height: 27px;
+    color: #111;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+main > div > section table td{
+    height: 40px;
+}
+
+main > div > section table td > div{
+    margin: auto;
+    line-height: 20px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    height: 20px;
+    width: 65px;
+}
+main > div > section table td > div.signed{
+    background-color: #a3c644;
+}
+main > div > section table td > div.awaits{
+    background-color: #ecc134;
+}
+main > div > section table td > div.helded{
+    background-color: #999;
+}
+main > div > section table td > div.changed{
+    background-color: #937ebd;
+}
+main > div > section table td > div.approved{
+    background-color: #39b7ac;
+}
+main > div > section table td > div.cancelled{
+    background-color: #b32746;
+}
+main > div > section table td > div.deleted{
+    background-color: #eb6a5a;
+}
+
+main > div > section table th.selected {
+    color: #46c6da;
+    border-bottom: 2px solid #39c2d7;
+}
+
+main > div > section table th.selected:after {
+    content: '\f107';
+    margin-left: 9px;
+    font-family: 'Font Awesome', sans-serif;
+    font-size: 14px;
+    color: #46c6da;
+}
+
