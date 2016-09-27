@@ -69,7 +69,7 @@ ul.dropdown-inside > li.soft-red:hover {background-color: #eb6a5a;}
 ul.dropdown-inside > li.gray:hover {background-color: #999;}
 
 /*
-!*todo: раскоментировать для просмотра в статике*!
+!*todo: раскомментировать для просмотра в статике*!
 .dropdown-inside > li.selected-top > a {color: #fff;}
 
 .dropdown-inside > li.selected-top > a:after{
@@ -107,7 +107,6 @@ ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top:hover > ul.ex
     margin: 0;
     border: 1px solid #999;
     background-color: #fff;
-
 }
 
 .expanded-top a {
@@ -118,7 +117,7 @@ ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top:hover > ul.ex
 }
 
 .expanded-top > li {
-    width: 500px;
+    width: 500px; /*todo: не получается сделать ширину меню в зависимости от контента, поставил фиксированную*/
     height: 32px;
     text-align: left;
     line-height: 32px;
@@ -139,7 +138,7 @@ ul.expanded-top.soft-red > li:hover {background-color: #eb6a5a;}
 ul.expanded-top.gray > li:hover {background-color: #999;}
 
 /*
-!*todo: раскоментировать для просмотра в статике*!
+!*todo: раскомментировать для просмотра в статике*!
 ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top > ul.expanded-top {
     display: block;
     left: 192px;
