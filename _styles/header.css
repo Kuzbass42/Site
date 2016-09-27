@@ -1,7 +1,6 @@
 header {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 /*header-user*/
@@ -41,7 +40,7 @@ header {
     height: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Oswald Regular', sans-serif;
     font-size: 12px;
     color: #fff;
 }
@@ -63,7 +62,7 @@ header {
     justify-content: center;
     width: 117px;
     font-family: 'Oswald Regular', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: #464547;
 }
 
@@ -78,7 +77,7 @@ header {
 .icon-angle-down:before,
 .icon-cog:before,
 .icon-question:before {
-    font-family: FontAwesome, sans-serif;
+    font-family: 'Font Awesome', sans-serif;
     font-size: 15px;
     font-style: normal;
 }

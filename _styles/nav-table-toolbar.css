@@ -1,8 +1,9 @@
 @import url(drop-down-menu.css);
 
 .nav-table-toolbar {
-     display: flex;
-     flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 850px;
 }
 
 .nav-table-toolbar > ul {

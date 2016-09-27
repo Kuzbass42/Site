@@ -118,7 +118,7 @@ ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top:hover > ul.ex
 }
 
 .expanded-top > li {
-    width: /*252px;*/500px;
+    width: 500px;
     height: 32px;
     text-align: left;
     line-height: 32px;
