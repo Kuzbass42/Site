@@ -4,6 +4,7 @@ main > div > section h1{
     color: #666;
     font-family: 'Oswald Regular', sans-serif;
     font-size: 24px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 

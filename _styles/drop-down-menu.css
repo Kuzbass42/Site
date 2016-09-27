@@ -3,7 +3,7 @@ li.dropdown {
     margin: 0;
 }
 
-ul.dropdown li {
+ul.dropdown > li {
     position: relative;
 }
 
@@ -13,12 +13,12 @@ ul.dropdown-inside {
     padding: 0;
 }
 
-ul.dropdown li.dropdown-top {
+ul.dropdown > li.dropdown-top {
     display: inline;
     float: left;
 }
 
-ul.dropdown li.dropdown-top:hover .dropdown-inside {
+ul.dropdown > li.dropdown-top:hover > ul.dropdown-inside {
     display: block;
     left: 5px;
 }
@@ -50,13 +50,14 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
 ul.dropdown-inside > li:first-child {margin-top: 6px;}
 ul.dropdown-inside > li:last-child {margin-bottom: 6px;}
 
-.dropdown-inside > li > a:hover {color: #fff;}
+.dropdown-inside > li:hover > a {color: #fff;}
 
-.dropdown-inside > li > a:hover:after{
+.dropdown-inside > li:hover > a:after{
     float: right;
     margin-right: 17px;
     content: '\f0da';
     font-family: 'Font Awesome', sans-serif;
+    font-size: 14px;
 }
 
 ul.dropdown-inside > li.violet:hover {background-color: #937ebd;}
@@ -68,7 +69,7 @@ ul.dropdown-inside > li.soft-red:hover {background-color: #eb6a5a;}
 ul.dropdown-inside > li.gray:hover {background-color: #999;}
 
 /*
-//todo: статика или динамика
+!*todo: раскоментировать для просмотра в статике*!
 .dropdown-inside > li.selected-top > a {color: #fff;}
 
 .dropdown-inside > li.selected-top > a:after{
@@ -76,6 +77,7 @@ ul.dropdown-inside > li.gray:hover {background-color: #999;}
     margin-right: 17px;
     content: '\f0da';
     font-family: 'Font Awesome', sans-serif;
+    font-size: 14px;
 }
 
 ul.dropdown-inside > li.violet.selected-top {background-color: #937ebd;}
@@ -85,4 +87,71 @@ ul.dropdown-inside > li.strong-red.selected-top {background-color: #b32746;}
 ul.dropdown-inside > li.moderate-cyan.selected-top {background-color: #39b7ac;}
 ul.dropdown-inside > li.soft-red.selected-top {background-color: #eb6a5a;}
 ul.dropdown-inside > li.gray.selected-top {background-color: #999;}
+*/
+
+ul.expanded-top {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top:hover > ul.expanded-top {
+    display: block;
+    left: 192px;
+}
+
+.expanded-top {
+    position: absolute;
+    left: -9999px;
+    top: -1px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #999;
+    background-color: #fff;
+
+}
+
+.expanded-top a {
+    color: #666;
+    width: 100%;
+    text-indent: 23px;
+    display: inline-block;
+}
+
+.expanded-top > li {
+    width: /*252px;*/500px;
+    height: 32px;
+    text-align: left;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+ul.expanded-top > li:first-child {margin-top: 6px;}
+ul.expanded-top > li:last-child {margin-bottom: 6px;}
+
+ul.expanded-top > li:hover > a {color: #fff;}
+
+ul.expanded-top.violet > li:hover {background-color: #937ebd;}
+ul.expanded-top.dark-cyan > li:hover {background-color: #1a9cb0;}
+ul.expanded-top.bright-yellow > li:hover {background-color: #ecc134;}
+ul.expanded-top.strong-red > li:hover {background-color: #b32746;}
+ul.expanded-top.moderate-cyan > li:hover {background-color: #39b7ac;}
+ul.expanded-top.soft-red > li:hover {background-color: #eb6a5a;}
+ul.expanded-top.gray > li:hover {background-color: #999;}
+
+/*
+!*todo: раскоментировать для просмотра в статике*!
+ul.dropdown > li.dropdown-top > ul.dropdown-inside li.selected-top > ul.expanded-top {
+    display: block;
+    left: 192px;
+}
+
+.expanded-top > li.selected-top > a {color: #fff;}
+
+ul.expanded-top.violet > li.selected-top {background-color: #937ebd;}
+ul.expanded-top.dark-cyan > li.selected-top {background-color: #1a9cb0;}
+ul.expanded-top.bright-yellow > li.selected-top {background-color: #ecc134;}
+ul.expanded-top.strong-red > li.selected-top {background-color: #b32746;}
+ul.expanded-top.moderate-cyan > li.selected-top {background-color: #39b7ac;}
+ul.expanded-top.soft-red > li.selected-top {background-color: #eb6a5a;}
+ul.expanded-top.gray > li.selected-top {background-color: #999;}
 */
