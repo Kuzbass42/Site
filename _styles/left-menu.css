@@ -73,7 +73,7 @@ main > aside > nav > ul li > a:before {
 }
 
 main > aside > nav > ul li.home > a:before { content: '\f015'; }
-main > aside > nav > ul li.document > a:before { content: '\f15c'; }
+main > aside > nav > ul li.document > a:before { content: '\f0f6'; }
 main > aside > nav > ul li.calendar > a:before { content: '\f073'; }
 main > aside > nav > ul li.archive > a:before { content: '\f187'; }
 main > aside > nav > ul li.nomenclature > a:before { content: '\f03a'; }

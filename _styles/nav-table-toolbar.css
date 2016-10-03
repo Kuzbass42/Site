@@ -80,12 +80,14 @@
 .attach-document:after,
 .create-document:after{
     position: absolute;
+    top: 11px;
     right: 15px;
     content: '\f0d7';
     font-family: 'Font Awesome', sans-serif;
 }
 
 .search-down,
+.search-magnifier,
 .search-plus {
     border: none;
     padding: 0;
@@ -94,24 +96,25 @@
     color: #ababab;;
 }
 
-.search-down:before,
 .search-down:after,
+.search-magnifier:after,
 .search-plus:after {
     font-family: 'Font Awesome', sans-serif;
     font-size: 18px;
 }
 
-.search-down:before {
+.search-down:after {
     content: '\f0d7';
+    margin-right: 9px;
 }
 
-.search-down:after{
+.search-magnifier:after{
     content: '\f002';
-    margin-left: 3px;
+    margin-right: 6px;
 }
 
 .search-plus:after{
     content: '\f00e';
-    margin: 0 6px;
+    margin-right: 6px;
 }
 
